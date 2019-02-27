@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Portfolio</title>
+	<title>Contact</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="./assets/css/style.css">
@@ -30,9 +30,35 @@
 		</div>
 	</nav>
 
-	<div class="main-section">
-	</div>
+	<div id="main-container" class="container">
+		<section class="main-section">
+			<h1>Contact</h1>
 
+			<form id="contact-form" action="contactform.php" method="post">
+				<ul>
+					<li>
+						<label for="name">Name</label>
+						<input type="text" id="name" name="name" placeholder="Type Name" required="required">
+					</li>
+					<li>
+						<label for="email">Email</label>
+						<input type="email" id="email" name="email" placeholder="email123@aol.com" required="required">
+					</li>
+					<li>
+						<label for="subject">Subject</label>
+						<input type="text" id="subject" name="subject" placeholder="Type Subject" required="required">
+					</li>
+					<li>
+						<label for="message">Message</label>
+						<textarea id="message" name="message" placeholder="Leave Message" required="required"></textarea>
+					</li>
+				</ul>
+				<input type="submit">
+			</form>
+
+		</section>
+
+	</div>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
